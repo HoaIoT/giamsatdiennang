@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://kit.fontawesome.com/c135a019b6.js" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="auth.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+<script src="https://cdn.tailwindcss.com"></script>
+<title>Sign Up</title>
+</head>
+<body>
+    <form class="form">
+        <h2>Đăng Kí</h2>
+        <div class="messageDiv" id="signUpMessage" style="display: none;"></div>
+        <div class="box1"></div>
+            <input type="text" placeholder="Email" id="rEmail"> 
+        </div>
+        <div class="box1"></div>
+            <input type="password" id="rPassword" placeholder="Password" >
+            <div id ="toggle" onclick="showPassword()"></div>
+        </div>
+        <div class="box1"></div>
+        <input type="password" id="cPassword" placeholder="Confirm password" >
+            <div id ="toggle" onclick="showPassword()"></div>
+        </div>
+        <div class="form--marketing">
+            <p class="note">Bạn đã có tài khoản? <a href="login.html" style="text-decoration: none; color:blue; font-weight: 600;">Đăng nhập</a> </p>
+        </div>
+        <button class="form--submit" id="signUp">
+            Đăng kí
+        </button>
+    </form>
+    <script src="scripts.js"></script>
+</body>
+</html>
